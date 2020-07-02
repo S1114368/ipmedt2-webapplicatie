@@ -1,0 +1,29 @@
+.nextButton{
+  box-shadow: 4px 4px 0px 0px #cccccccc;
+  background:linear-gradient(to bottom, $default-bg-color 5%, $default-bg-color 100%);
+  background-color: $default-bg-color;
+  border-radius:10px;
+  border:1px solid #333029;
+  display:inline-block;
+  cursor:pointer;
+  color:#fcfcfc;
+  font-family:Arial;
+  font-size:25px;
+  padding: 1px 10px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #616161;
+}
+
+.nextButton:hover {
+  background:linear-gradient(to bottom, #013765 5%, #3e8d96 90%);
+}
+.nextButton:active {
+	position:relative;
+	top:1px;
+}
+
+@media only screen and (min-width: 1000px){
+  .nextButton{
+    width: 10%;
+  }
+}

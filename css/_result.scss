@@ -1,0 +1,122 @@
+@import 'variables';
+.result{
+  display: grid;
+  grid-template: 10% auto 10% auto 10% 15% / 10% auto 10%;
+  height: 92vh;
+
+  &__votes{
+    grid-column-start: 3;
+    margin-right: 16px;
+  }
+
+  &__nextButton{
+    grid-column-start: 2;
+    grid-row-start: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15%;
+  }
+  &__nextButton .nextButton{
+    width: 200px;
+    height: 30px;
+  }
+
+  &__progress{
+    grid-column-start: 2;
+    grid-row-start: 6;
+    margin-top: 3vh;
+  }
+
+  &__vlag{
+    display: grid;
+    grid-template: auto auto auto auto auto auto auto auto auto / 100%;
+    grid-column-start: 3;
+    grid-row-start: 2;
+
+    &__item1{
+      background-color: $default-red-color;
+      border-radius: 5px 0px 0px 0px;
+    }
+    &__item3{
+      background-color: $default-red-color;
+    }
+    &__item5{
+      background-color: $default-red-color;
+    }
+    &__item7{
+      background-color: $default-red-color;
+    }
+    &__item9{
+      background-color: $default-red-color;
+      border-radius: 5px 0px 0px 0px;
+    }
+    }
+    &__tekstveld{
+      grid-column-start: 2;
+      grid-row-start: 2;
+      background-color: $default-bg-color;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      font-size: 20px;
+      }
+
+    &__votebars{
+      grid-column-start: 2;
+      grid-row-start: 4;
+      padding-bottom:  0;
+
+      &__hillary{
+        width: 100%;
+        background-color: grey;
+
+        &__tekst{
+          color: black;
+          grid-row-start: 1;
+        }
+
+        &__bar{
+          width: 1%;
+          height: 24px;
+          background-color: $default-bg-color;
+          text-align: center;
+        }
+      }
+    &__trump{
+      width: 100%;
+      background-color: grey;
+
+      &__tekst{
+        color: black;
+      }
+      &__bar{
+        width: 1%;
+        height: 24px;
+        background-color: $default-red-color;
+        text-align: center;
+      }
+    }
+    }
+}
+
+@media only screen and (min-width: 750px){
+  .result{
+    grid-template: 10% auto 10% auto 10% 15% / 20% auto 20%;
+
+  }
+}
+@media only screen and (min-width: 750px){
+  .result__votebars__hillary__tekst{
+    font-size: 20px;
+  }
+  .result__votebars__trump__tekst{
+    font-size: 20px;
+  }
+  .result__nextButton .nextButton{
+    width: 250px;
+    height: 50px;
+  }
+  }

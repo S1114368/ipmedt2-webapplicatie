@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.min.css">
+  <script type="text/javascript" src="js/main.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <title>Schoolproject</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="navbar__list">
+      <li class="navbar__list__home">
+        <img src="img/home.png" alt="" class = "navbar__list__home__img" id="home--js">
+      </li>
+      <li class="navbar__list__volger">
+          <img src="img/redperson.png" alt="" class="navbar__list__volger__img">
+          <p id="js--volgers" class="navbar__list__volger__volgers"></p>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="result">
+    <div class="result__votes">
+      <div class="votesErbij">
+        <p id="votes--js"></p>
+      </div>
+    </div>
+    <div class="result__tekstveld">
+        <p class="result__tekstveld__tekst" id="resultTekst--js"></p>
+    </div>
+    <div class="result__vlag">
+       <div class="result__vlag__item1"></div>
+       <div class="result__vlag__item2"></div>
+       <div class="result__vlag__item3"></div>
+       <div class="result__vlag__item4"></div>
+       <div class="result__vlag__item5"></div>
+       <div class="result__vlag__item6"></div>
+       <div class="result__vlag__item7"></div>
+       <div class="result__vlag__item8"></div>
+       <div class="result__vlag__item9"></div>
+    </div>
+    <div class="result__votebars">
+      <p class="result__votebars__hillary__tekst">Hillary Clinton:</p>
+      <div class="result__votebars__hillary">
+        <div class="result__votebars__hillary__bar" id="hillarybar--js"></div>
+      </div>
+      <p class="result__votebars__trump__tekst">Donald Trump:</p>
+      <div class="result__votebars__trump">
+        <div class="result__votebars__trump__bar" id="trumpbar--js"></div>
+      </div>
+    </div>
+    <div class="result__nextButton">
+      <button class="nextButton" id="nextButton--js" onclick="location.href='index.html'">Restart</button>
+    </div>
+  <div class="result__progress">
+  <div class="progress">
+    <div class="progress-track"></div>
+      <div id="step1" class="progress-step">
+        Start
+      </div>
+      <div id="step2" class="progress-step">
+        Campagne
+      </div>
+      <div id="step3" class="progress-step">
+        Debat
+      </div>
+      <div id="step4" class="progress-step">
+        Complete
+      </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

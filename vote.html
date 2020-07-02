@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.min.css">
+  <script type="text/javascript" src="js/main.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <title>Schoolproject</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="navbar__list">
+      <li class="navbar__list__home">
+        <img src="img/home.png" alt="" class = "navbar__list__home__img" id="home--js">
+      </li>
+      <li class="navbar__list__volger">
+          <img src="img/redperson.png" alt="" class="navbar__list__volger__img">
+          <p id="js--volgers" class="navbar__list__volger__volgers"></p>
+      </li>
+    </ul>
+  </nav>
+  <div class="votescherm">
+    <div class="votescherm__vote" id="vote--js">
+      <div class="votescherm__vote__titel">
+        <h3>VOTE</h3>
+      </div>
+        <div class="votescherm__vote__clinton">
+          <p>Hillary CLinton</p>
+        </div>
+        <div class="votescherm__vote__trump">
+          <p>Donald J. Trump</p>
+        </div>
+        <button class="votescherm__vote__clintonButton" id="clintonVoteButton--js"></button>
+        <button class="votescherm__vote__trumpButton" id="trumpVoteButton--js"></button>
+    </div>
+    <div class="votescherm__votebox">
+      <div class="votescherm__votebox__bovenkant"></div>
+      <div class="votescherm__votebox__onderkant">
+        <div class="votescherm__votebox__onderkant__tekst">
+          <p>Votes</p>
+        </div>
+      </div>
+    </div>
+    <div class="votescherm__progress">
+      <div class="progress">
+        <div class="progress-track"></div>
+        <div id="step1" class="progress-step">
+          Step One
+        </div>
+        <div id="step2" class="progress-step">
+          Step Two
+        </div>
+        <div id="step3" class="progress-step">
+          Step Three
+        </div>
+        <div id="step4" class="progress-step">
+          Complete
+        </div>
+      </div>
+  </div>
+  <div class="votescherm__nextButton">
+    <div class="body__nextButton">
+      <button class="nextButton" id="nextButton--js" style="display: none;">&#8594;</button>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

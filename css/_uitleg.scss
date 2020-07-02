@@ -1,0 +1,130 @@
+@import 'variables';
+
+.uitleg{
+  display: grid;
+  grid-template: 120px auto auto auto / 10% auto 10%;
+  height: 92vh;
+
+  &__progress{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    display: flex;
+    flex-direction: column;
+  }
+  &__progress .progress{
+    margin-top: auto;
+    margin-bottom: 10px;
+  }
+
+  &__vlag{
+    display: grid;
+    grid-template: auto auto auto auto auto auto auto auto auto / 100%;
+    grid-column-start: 3;
+    grid-row-start: 2;
+
+    &__item1{
+      background-color: $default-red-color;
+      border-radius: 5px 0px 0px 0px;
+    }
+    &__item3{
+      background-color: $default-red-color;
+    }
+    &__item5{
+      background-color: $default-red-color;
+    }
+    &__item7{
+      background-color: $default-red-color;
+    }
+    &__item9{
+      background-color: $default-red-color;
+      border-radius: 5px 0px 0px 0px;
+    }
+    }
+
+  &__popupcontainer{
+    width: 90%;
+    height: 100%;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    margin-top: 21px;
+    position: relative;
+  }
+
+  &__tekstveld{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: $default-bg-color;
+    border-radius: 5px;
+    padding: 2px 8px 10px 5px;
+
+    &__tekst{
+      margin: 5px;
+      float: right;
+        }
+      }
+
+  &__nextButton{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  &__nextButton .nextButton{
+    width: 250px;
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 700px){
+  .uitleg{
+    grid-template: 120px 47% auto 15% 2%/ 25% auto 25%;
+    font-size: 20px;
+
+    &__nextButton{
+      margin-top: 25%;
+      margin-bottom: 10%;
+    }
+
+    &__popupcontainer{
+      width: 100%;
+    }
+    &__popup{
+      margin-right: 5%;
+      font-size: 30px;
+    }
+    &__popup p{
+      font-size: 14px;
+      margin-top: 3px;
+    }
+  }
+}
+@media only screen and (min-width: 700px){
+  .uitleg{
+    grid-template: 120px 47% auto 15% 2%/ 20% auto 20%;
+    font-size: 18px;
+
+    &__nextButton{
+      margin-top: 10%;
+      margin-bottom: 2%;
+    }
+
+    &__popupcontainer{
+      width: 100%;
+    }
+    &__popup{
+      margin-right: 30%;
+    }
+    &__popup p{
+      font-size: 14px;
+      margin-top: 3px;
+    }
+  }
+}
+@media only screen and (min-width: 1000px){
+  .uitleg__popup{
+    margin-right: 78%;
+  }
+}

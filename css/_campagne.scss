@@ -1,0 +1,102 @@
+@import 'antwoorden';
+@import 'variables';
+
+.campagne{
+  display: grid;
+  height: 92vh;
+  grid-template: auto 0.1% auto auto auto auto / 10% auto 10%;
+  overflow: hidden;
+
+  &__votes{
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+
+  &__nextButton{
+    grid-row-start: 5;
+    grid-column-start: 2;
+  }
+
+  &__background{
+    background: linear-gradient(180deg, #888 15%, rgba(5, 0, 0, 0) 90%), url("../img/campaign.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  &__titel{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    text-align: center;
+  }
+
+  &__titel p{
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 1px;
+    margin-top: 6.5vh
+  }
+
+  &__vragen{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    text-align: center;
+    &__vraag p{
+      background-color: $default-bg-color;
+      border: 1px solid #aaa;
+      font-size: 20px;
+      padding: 10px 10px;
+      margin-bottom: 1px;
+      margin-top: 0px;
+    }
+  }
+
+  &__progress{
+    grid-row-start: 6;
+    grid-column-start: 2;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  &__progress .progress{
+    margin-top: auto;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 700px){
+  .campagne{
+    grid-template: auto 0.1% auto auto auto 10% / 20% auto 20%;
+
+    &__titel{
+      width: 60%;
+      margin-left: 20%;
+    }
+    &__votes{
+    grid-column-start: 3;
+    }
+
+    &__nextButton .body__nextButton{
+      width: 100%;
+      height: 35%;
+    }
+  }
+  .votesErbij{
+    margin-right: 35%;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .campagne__vragen{
+    width: 70%;
+    margin-left: 15%;
+  }
+  .campagne__nextButton .body__nextButton{
+    
+  }
+  .votesErbij{
+    margin-right: 85%;
+  }
+}

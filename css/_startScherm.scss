@@ -1,0 +1,108 @@
+@import 'variables';
+
+.body{
+  display: grid;
+  grid-template: 5% auto auto auto auto auto 9% / 10% auto 10%;
+  height: 90vh;
+  width: 100%;
+
+  &__nextButton{
+    grid-column-start: 2;
+    grid-row-start: 7;
+  }
+
+  &__nextButton .nextButton{
+    grid-column-start: 2;
+    grid-row-start: 7;
+    float: right;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  &__imageResult2{
+    height: 100%;
+    grid-column-start: 2;
+    grid-row-start: 5;
+    width: 100%;
+
+    &__img2{
+      margin-top: 10%;
+      height: 80%;
+      width: 100%;
+      margin-bottom: 2vh;
+    }
+  }
+  &__imageResult{
+    height: 100%;
+    grid-column-start: 2;
+    grid-row-start: 6;
+    width: 100%;
+
+    &__img{
+      height: 100%;
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 2vh;
+    }
+  }
+
+  &__h1{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 1vh;
+    text-align: center;
+  }
+
+  &__imageStartscherm{
+    height: 100%;
+    grid-column-start: 2;
+    grid-row-start: 3;
+
+    &__img{
+      height: 80%;
+      width: 100%;
+      margin-top: 25px;
+    }
+  }
+}
+
+
+.body__tekst{
+  grid-column-start: 2;
+  grid-row-start: 4;
+  width: 100%;
+}
+
+.body__tekst p{
+  margin-bottom: 20px;
+  max-width: 1000px;
+  color: black;
+}
+
+h1{
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 717px){
+  h1{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 800px){
+  .body{
+    grid-template: 5% auto auto auto auto auto 9% / 30% auto 30%;
+}
+}
+
+@media only screen and (min-width: 400px){
+  .body__tekst{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 18px;
+  }
+  .nextButton{
+    height: 55%;
+    width: 12.5%;
+  }
+}

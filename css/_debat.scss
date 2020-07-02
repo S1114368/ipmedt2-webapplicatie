@@ -1,0 +1,86 @@
+@import 'antwoorden';
+@import 'variables';
+
+.debat{
+  display: grid;
+  height: 92vh;
+  grid-template: auto 0.1% auto auto auto auto / 10% auto 10%;
+  overflow: hidden;
+
+  &__votes{
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+
+  &__background{
+    background: linear-gradient(180deg, #9D9F9E 0%, rgba(5, 0, 255, 0) 55.73%), url("../img/beterdebate.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__titel{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    text-align: center;
+  }
+
+  &__titel p{
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 1px;
+    margin-top: 6.5vh
+  }
+
+  &__vragen{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    text-align: center;
+    &__vraag p{
+      background-color: $default-bg-color;
+      border: 1px solid #aaa;
+      font-size: 20px;
+      padding: 10px 10px;
+      margin-bottom: 1px;
+      margin-top: 0px;
+    }
+  }
+  &__nextButton{
+    grid-row-start: 5;
+    grid-column-start: 2;
+  }
+
+  &__progress{
+    grid-row-start: 6;
+    grid-column-start: 2;
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  &__progress .progress{
+    margin-top: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 700px){
+  .debat{
+    grid-template: auto 0.1% auto auto auto auto / 20% auto 20%;
+  &__votes{
+        grid-column-start: 3;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px){
+    .debat__vragen{
+      width: 70%;
+      margin-left: 15%;
+    }
+    .debat__nextButton .body__nextButton{
+
+    }
+}

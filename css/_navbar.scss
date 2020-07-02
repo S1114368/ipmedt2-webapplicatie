@@ -1,0 +1,78 @@
+@import'variables';
+
+
+
+.navbar{
+  height: 8vh;
+  background-color: $default-bg-color;
+  display: grid;
+
+  &__list{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 2% 20% auto 20% 2%;
+    list-style: none;
+    padding-inline-start: 1%;
+
+    &__home{
+      height: 8vh;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      max-height: 100%;
+
+      &__img{
+        height: 5vh;
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
+        margin-left: 20px;
+      }
+      &__img:hover{
+        cursor: pointer;
+      }
+    }
+
+
+    &__volger{
+      height: 8vh;
+      grid-column-start: 4;
+      grid-column-end: 4;
+      max-height: 100%;
+      text-align: center;
+      vertical-align: middle;
+
+      &__volgers{
+        float:left;
+        line-height: 2.6vh;
+        font-size: 18px;
+      }
+
+      &__img{
+        max-width: 60%;
+        height: 5vh;
+        float: left;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 420px){
+  .navbar__list{
+    grid-template-columns: 0.1% 25% auto 25% 0.1%;
+  }
+
+}
+
+@media only screen and (min-width: 710px){
+  .navbar__list__volger__img{
+    margin-left: 5%;
+  }
+}
+@media only screen and (min-height: 1000px){
+  .navbar__list__volger__volgers{
+    margin-top: 25px;
+    font-size: 24px;
+  }
+}

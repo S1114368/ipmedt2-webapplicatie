@@ -1,0 +1,24 @@
+.votesErbij{
+  animation-name: animation;
+  animation-duration: 2s;
+  float: right;
+  color: #29F944;
+}
+.animate {
+  animation: animation 2s;
+  animation-fill-mode: forwards;
+  margin-top: 0;
+  position: relative;
+}
+
+
+
+@keyframes animation {
+  from{
+    top: -10px;
+  }
+  to{
+    top: 8px;
+
+  }
+}
